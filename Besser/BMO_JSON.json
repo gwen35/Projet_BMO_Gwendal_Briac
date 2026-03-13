@@ -1,0 +1,2057 @@
+{
+  "project": {
+    "id": "project_1773132765763_727kj8tue",
+    "type": "Project",
+    "name": "BMO",
+    "description": "New project",
+    "owner": "User",
+    "createdAt": "2026-03-10T08:52:45.763Z",
+    "currentDiagramType": "ClassDiagram",
+    "diagrams": {
+      "ClassDiagram": {
+        "id": "3427a5da-e1bb-4c56-b69c-f86641d30c70",
+        "title": "Class Diagram",
+        "model": {
+          "version": "3.0.0",
+          "type": "ClassDiagram",
+          "size": {
+            "width": 1040,
+            "height": 1080
+          },
+          "interactive": {
+            "elements": {},
+            "relationships": {}
+          },
+          "elements": {
+            "2f278091-b8c0-4b93-8bba-483242e4f510": {
+              "id": "2f278091-b8c0-4b93-8bba-483242e4f510",
+              "name": "Centre",
+              "type": "Class",
+              "owner": null,
+              "bounds": {
+                "x": -250,
+                "y": -370,
+                "width": 160,
+                "height": 160
+              },
+              "attributes": [
+                "7a187fbc-49de-4e7d-a9d0-b3bdbddbe736",
+                "0c295d9d-abf7-4fe6-b641-5f9cacf76219",
+                "40d7ae12-2ecc-40a4-8400-3006125bac82"
+              ],
+              "methods": [
+                "fa90e407-d541-4c47-8771-131dacaf8bfe"
+              ]
+            },
+            "7a187fbc-49de-4e7d-a9d0-b3bdbddbe736": {
+              "id": "7a187fbc-49de-4e7d-a9d0-b3bdbddbe736",
+              "name": "idCentre",
+              "type": "ClassAttribute",
+              "owner": "2f278091-b8c0-4b93-8bba-483242e4f510",
+              "bounds": {
+                "x": -249.5,
+                "y": -329.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "0c295d9d-abf7-4fe6-b641-5f9cacf76219": {
+              "id": "0c295d9d-abf7-4fe6-b641-5f9cacf76219",
+              "name": "nom",
+              "type": "ClassAttribute",
+              "owner": "2f278091-b8c0-4b93-8bba-483242e4f510",
+              "bounds": {
+                "x": -249.5,
+                "y": -299.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "40d7ae12-2ecc-40a4-8400-3006125bac82": {
+              "id": "40d7ae12-2ecc-40a4-8400-3006125bac82",
+              "name": "adresse",
+              "type": "ClassAttribute",
+              "owner": "2f278091-b8c0-4b93-8bba-483242e4f510",
+              "bounds": {
+                "x": -249.5,
+                "y": -269.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "fa90e407-d541-4c47-8771-131dacaf8bfe": {
+              "id": "fa90e407-d541-4c47-8771-131dacaf8bfe",
+              "name": "+ __init__()",
+              "type": "ClassMethod",
+              "owner": "2f278091-b8c0-4b93-8bba-483242e4f510",
+              "bounds": {
+                "x": -249.5,
+                "y": -239.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "def __init__(self):\n    self.instances = []\n    c1 = CentreObj(1, \"Centre Ville\", \"1 rue du Parc\")\n    self.instances.append(c1)\n\nclass CentreObj:\n    def __init__(self, idCentre, nom, adresse):\n        self.idCentre = idCentre\n        self.nom = nom\n        self.adresse = adresse",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "49db1b4b-6d6c-49e1-8cd8-b8825b735602": {
+              "id": "49db1b4b-6d6c-49e1-8cd8-b8825b735602",
+              "name": "Evenement",
+              "type": "Class",
+              "owner": null,
+              "bounds": {
+                "x": 30,
+                "y": -510,
+                "width": 170,
+                "height": 250
+              },
+              "attributes": [
+                "b261f865-0c0b-4bca-880c-b0b97665e75b",
+                "e5b28ab9-d9d1-4cfc-8efe-41cf37b977f1",
+                "ab0ce28c-e59d-4cd6-90d8-1bc288192799",
+                "9ac58e09-d5ff-4fe3-bd5e-67d67b741004",
+                "a3e65dd9-83a4-4bf5-821b-90dabc5bd137"
+              ],
+              "methods": [
+                "6a88d93c-c9ba-4ffe-97f7-7dac9ee40f11",
+                "7be6c26d-c3d4-49c5-80e2-f930339c666c"
+              ]
+            },
+            "b261f865-0c0b-4bca-880c-b0b97665e75b": {
+              "id": "b261f865-0c0b-4bca-880c-b0b97665e75b",
+              "name": "idEvenement",
+              "type": "ClassAttribute",
+              "owner": "49db1b4b-6d6c-49e1-8cd8-b8825b735602",
+              "bounds": {
+                "x": 30.5,
+                "y": -469.5,
+                "width": 169,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "e5b28ab9-d9d1-4cfc-8efe-41cf37b977f1": {
+              "id": "e5b28ab9-d9d1-4cfc-8efe-41cf37b977f1",
+              "name": "nom",
+              "type": "ClassAttribute",
+              "owner": "49db1b4b-6d6c-49e1-8cd8-b8825b735602",
+              "bounds": {
+                "x": 30.5,
+                "y": -439.5,
+                "width": 169,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "ab0ce28c-e59d-4cd6-90d8-1bc288192799": {
+              "id": "ab0ce28c-e59d-4cd6-90d8-1bc288192799",
+              "name": "description",
+              "type": "ClassAttribute",
+              "owner": "49db1b4b-6d6c-49e1-8cd8-b8825b735602",
+              "bounds": {
+                "x": 30.5,
+                "y": -409.5,
+                "width": 169,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "9ac58e09-d5ff-4fe3-bd5e-67d67b741004": {
+              "id": "9ac58e09-d5ff-4fe3-bd5e-67d67b741004",
+              "name": "nbParticipants",
+              "type": "ClassAttribute",
+              "owner": "49db1b4b-6d6c-49e1-8cd8-b8825b735602",
+              "bounds": {
+                "x": 30.5,
+                "y": -379.5,
+                "width": 169,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "a3e65dd9-83a4-4bf5-821b-90dabc5bd137": {
+              "id": "a3e65dd9-83a4-4bf5-821b-90dabc5bd137",
+              "name": "emailReferent",
+              "type": "ClassAttribute",
+              "owner": "49db1b4b-6d6c-49e1-8cd8-b8825b735602",
+              "bounds": {
+                "x": 30.5,
+                "y": -349.5,
+                "width": 169,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "6a88d93c-c9ba-4ffe-97f7-7dac9ee40f11": {
+              "id": "6a88d93c-c9ba-4ffe-97f7-7dac9ee40f11",
+              "name": "+ __init__()",
+              "type": "ClassMethod",
+              "owner": "49db1b4b-6d6c-49e1-8cd8-b8825b735602",
+              "bounds": {
+                "x": 30.5,
+                "y": -319.5,
+                "width": 169,
+                "height": 30
+              },
+              "code": "def __init__(self):\n    self.instances = []\n    ev1 = EvenementObj(1, \"Conférence IA\", \"Présentation IA\", 30, \"contact@centre.fr\")\n    self.instances.append(ev1)\n\nclass EvenementObj:\n    def __init__(self, idEvenement, nom, description, nbParticipants, emailReferent):\n        self.idEvenement = idEvenement\n        self.nom = nom\n        self.description = description\n        self.nbParticipants = nbParticipants\n        self.emailReferent = emailReferent\n        self.reservation = None\n        self.element = None",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "7be6c26d-c3d4-49c5-80e2-f930339c666c": {
+              "id": "7be6c26d-c3d4-49c5-80e2-f930339c666c",
+              "name": "+ verifier_logistique()",
+              "type": "ClassMethod",
+              "owner": "49db1b4b-6d6c-49e1-8cd8-b8825b735602",
+              "bounds": {
+                "x": 30.5,
+                "y": -289.5,
+                "width": 169,
+                "height": 30
+              },
+              "code": "def verifier_logistique(self):\n    if self.reservation and self.reservation.element:\n        return self.nbParticipants <= self.reservation.element.capaciteMax\n    return False",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "35538f03-4fe5-4043-aa7e-d173fa3413ef": {
+              "id": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+              "name": "Element",
+              "type": "Class",
+              "owner": null,
+              "bounds": {
+                "x": -280,
+                "y": -120,
+                "width": 220,
+                "height": 250
+              },
+              "attributes": [
+                "c43e7b5c-94fb-4470-96d0-e763983ae6f1",
+                "d01e8bbe-8c9c-439a-8d77-9e0ff083392b",
+                "fdc725f6-9d92-4e7d-828b-3fe2113615f8",
+                "351023f1-2752-4d3c-83b3-ccbcecfdcf0f",
+                "116db15d-a782-4cd7-8db4-58ef8dac4cd7"
+              ],
+              "methods": [
+                "505f3411-fc0e-4130-94ed-7761466933ee",
+                "8209b21a-6036-4022-bb6b-4a9baae3817a"
+              ]
+            },
+            "c43e7b5c-94fb-4470-96d0-e763983ae6f1": {
+              "id": "c43e7b5c-94fb-4470-96d0-e763983ae6f1",
+              "name": "idElement",
+              "type": "ClassAttribute",
+              "owner": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+              "bounds": {
+                "x": -279.5,
+                "y": -79.5,
+                "width": 219,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "d01e8bbe-8c9c-439a-8d77-9e0ff083392b": {
+              "id": "d01e8bbe-8c9c-439a-8d77-9e0ff083392b",
+              "name": "nom",
+              "type": "ClassAttribute",
+              "owner": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+              "bounds": {
+                "x": -279.5,
+                "y": -49.5,
+                "width": 219,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "fdc725f6-9d92-4e7d-828b-3fe2113615f8": {
+              "id": "fdc725f6-9d92-4e7d-828b-3fe2113615f8",
+              "name": "capaciteMax",
+              "type": "ClassAttribute",
+              "owner": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+              "bounds": {
+                "x": -279.5,
+                "y": -19.5,
+                "width": 219,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "351023f1-2752-4d3c-83b3-ccbcecfdcf0f": {
+              "id": "351023f1-2752-4d3c-83b3-ccbcecfdcf0f",
+              "name": "dureeMinimale",
+              "type": "ClassAttribute",
+              "owner": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+              "bounds": {
+                "x": -279.5,
+                "y": 10.5,
+                "width": 219,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "116db15d-a782-4cd7-8db4-58ef8dac4cd7": {
+              "id": "116db15d-a782-4cd7-8db4-58ef8dac4cd7",
+              "name": "jourInterdit",
+              "type": "ClassAttribute",
+              "owner": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+              "bounds": {
+                "x": -279.5,
+                "y": 40.5,
+                "width": 219,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "505f3411-fc0e-4130-94ed-7761466933ee": {
+              "id": "505f3411-fc0e-4130-94ed-7761466933ee",
+              "name": "+ __init__()",
+              "type": "ClassMethod",
+              "owner": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+              "bounds": {
+                "x": -279.5,
+                "y": 70.5,
+                "width": 219,
+                "height": 30
+              },
+              "code": "def __init__(self):\n    self.instances = []\n    e1 = ElementObj(1, \"Salle Principale\", 100, 2, \"Dimanche\")\n    self.instances.append(e1)\n\nclass ElementObj:\n    def __init__(self, idElement, nom, capaciteMax, dureeMinimale, jourInterdit):\n        self.idElement = idElement\n        self.nom = nom\n        self.capaciteMax = capaciteMax\n        self.dureeMinimale = dureeMinimale\n        self.jourInterdit = jourInterdit",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "8209b21a-6036-4022-bb6b-4a9baae3817a": {
+              "id": "8209b21a-6036-4022-bb6b-4a9baae3817a",
+              "name": "+ valider_creneau(debut, fin)",
+              "type": "ClassMethod",
+              "owner": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+              "bounds": {
+                "x": -279.5,
+                "y": 100.5,
+                "width": 219,
+                "height": 30
+              },
+              "code": "def valider_creneau(self, debut, fin):\n    duree = (fin - debut).days\n\n    if duree < self.dureeMinimale:\n        return False\n\n    if debut.strftime('%A') == self.jourInterdit:\n        return False\n\n    return True",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "5bd4468c-7987-490e-855b-571f09d1d82c": {
+              "id": "5bd4468c-7987-490e-855b-571f09d1d82c",
+              "name": "Tarif",
+              "type": "Class",
+              "owner": null,
+              "bounds": {
+                "x": -420,
+                "y": 250,
+                "width": 160,
+                "height": 160
+              },
+              "attributes": [
+                "12c0e282-a2b1-43da-9339-460ed8a90560",
+                "bdf912d5-73a1-44dc-8dc0-7c61c7d654ed",
+                "94be32e0-2b89-4634-8841-b558856dfcf5"
+              ],
+              "methods": [
+                "84ddba5c-8f79-4b9e-baca-748089d72558"
+              ]
+            },
+            "12c0e282-a2b1-43da-9339-460ed8a90560": {
+              "id": "12c0e282-a2b1-43da-9339-460ed8a90560",
+              "name": "idTarif",
+              "type": "ClassAttribute",
+              "owner": "5bd4468c-7987-490e-855b-571f09d1d82c",
+              "bounds": {
+                "x": -419.5,
+                "y": 290.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "bdf912d5-73a1-44dc-8dc0-7c61c7d654ed": {
+              "id": "bdf912d5-73a1-44dc-8dc0-7c61c7d654ed",
+              "name": "saison",
+              "type": "ClassAttribute",
+              "owner": "5bd4468c-7987-490e-855b-571f09d1d82c",
+              "bounds": {
+                "x": -419.5,
+                "y": 320.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "94be32e0-2b89-4634-8841-b558856dfcf5": {
+              "id": "94be32e0-2b89-4634-8841-b558856dfcf5",
+              "name": "prixParJour",
+              "type": "ClassAttribute",
+              "owner": "5bd4468c-7987-490e-855b-571f09d1d82c",
+              "bounds": {
+                "x": -419.5,
+                "y": 350.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "public",
+              "attributeType": "float",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "84ddba5c-8f79-4b9e-baca-748089d72558": {
+              "id": "84ddba5c-8f79-4b9e-baca-748089d72558",
+              "name": "+ __init__()",
+              "type": "ClassMethod",
+              "owner": "5bd4468c-7987-490e-855b-571f09d1d82c",
+              "bounds": {
+                "x": -419.5,
+                "y": 380.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "def __init__(self):\n    self.instances = []\n    t1 = TarifObj(1, \"Hiver\", 50.0)\n    self.instances.append(t1)\n\nclass TarifObj:\n    def __init__(self, idTarif, saison, prixParJour):\n        self.idTarif = idTarif\n        self.saison = saison\n        self.prixParJour = prixParJour",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "43cb4524-6f8b-47c0-8a45-8d33d1b43fb0": {
+              "id": "43cb4524-6f8b-47c0-8a45-8d33d1b43fb0",
+              "name": "Indisponibilite",
+              "type": "Class",
+              "owner": null,
+              "bounds": {
+                "x": -190,
+                "y": 260,
+                "width": 160,
+                "height": 190
+              },
+              "attributes": [
+                "7fa240ce-983e-4384-bf7e-b802291fd4d7",
+                "59d5721d-1bef-4164-b4b9-a5661ebc85c2",
+                "d97c1d2b-95dd-4ddc-822a-311a8321f7f0",
+                "beba3f2c-cae8-445e-ad71-961255b63e28"
+              ],
+              "methods": [
+                "5811be9e-ed8a-4a4e-b6e4-edb910aec817"
+              ]
+            },
+            "7fa240ce-983e-4384-bf7e-b802291fd4d7": {
+              "id": "7fa240ce-983e-4384-bf7e-b802291fd4d7",
+              "name": "idIndisponbilite",
+              "type": "ClassAttribute",
+              "owner": "43cb4524-6f8b-47c0-8a45-8d33d1b43fb0",
+              "bounds": {
+                "x": -189.5,
+                "y": 300.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "59d5721d-1bef-4164-b4b9-a5661ebc85c2": {
+              "id": "59d5721d-1bef-4164-b4b9-a5661ebc85c2",
+              "name": "dateDebut",
+              "type": "ClassAttribute",
+              "owner": "43cb4524-6f8b-47c0-8a45-8d33d1b43fb0",
+              "bounds": {
+                "x": -189.5,
+                "y": 330.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "date",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "d97c1d2b-95dd-4ddc-822a-311a8321f7f0": {
+              "id": "d97c1d2b-95dd-4ddc-822a-311a8321f7f0",
+              "name": "dateFin",
+              "type": "ClassAttribute",
+              "owner": "43cb4524-6f8b-47c0-8a45-8d33d1b43fb0",
+              "bounds": {
+                "x": -189.5,
+                "y": 360.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "date",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "beba3f2c-cae8-445e-ad71-961255b63e28": {
+              "id": "beba3f2c-cae8-445e-ad71-961255b63e28",
+              "name": "raison",
+              "type": "ClassAttribute",
+              "owner": "43cb4524-6f8b-47c0-8a45-8d33d1b43fb0",
+              "bounds": {
+                "x": -189.5,
+                "y": 390.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "5811be9e-ed8a-4a4e-b6e4-edb910aec817": {
+              "id": "5811be9e-ed8a-4a4e-b6e4-edb910aec817",
+              "name": "+ __init__()",
+              "type": "ClassMethod",
+              "owner": "43cb4524-6f8b-47c0-8a45-8d33d1b43fb0",
+              "bounds": {
+                "x": -189.5,
+                "y": 420.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "def __init__(self):\n    self.instances = []\n    i1 = IndisponibiliteObj(1, \"2026-03-10\", \"2026-03-12\", \"Maintenance\")\n    self.instances.append(i1)\n\nclass IndisponibiliteObj:\n    def __init__(self, idIndisponibilite, dateDebut, dateFin, raison):\n        self.idIndisponibilite = idIndisponibilite\n        self.dateDebut = dateDebut\n        self.dateFin = dateFin\n        self.raison = raison",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "6cc68481-1a61-41e5-9c40-89512ec34db3": {
+              "id": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "name": "Reservation",
+              "type": "Class",
+              "owner": null,
+              "bounds": {
+                "x": 100,
+                "y": -130,
+                "width": 210,
+                "height": 370
+              },
+              "attributes": [
+                "a656120a-34a5-42ba-920b-382883d149a3",
+                "53cc0fc1-2a8e-4d2d-8b00-3f48b2ba7861",
+                "a85075cb-315d-437d-a4a1-0cbe8f9e7b20",
+                "45b6e72e-d7ea-44c2-90f6-6351bdfa376b",
+                "8b442a5b-ca15-4e4d-a37a-74ba8c7e70a3"
+              ],
+              "methods": [
+                "ef31bd43-391f-4f54-bc82-55430ae9f40c",
+                "5c27b690-8753-4d89-b7a0-f006dfb18bb6",
+                "70aa375a-ef6c-4c8e-84b9-a68c7b861a84",
+                "8465004c-6230-40fd-bb76-8cb1fd35d8cd",
+                "d9f34f5b-db2a-46a6-a804-d3a34959377d",
+                "dc068a50-5ba4-40bd-b77e-009d0c41b0e7"
+              ]
+            },
+            "a656120a-34a5-42ba-920b-382883d149a3": {
+              "id": "a656120a-34a5-42ba-920b-382883d149a3",
+              "name": "idReservation",
+              "type": "ClassAttribute",
+              "owner": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "bounds": {
+                "x": 100.5,
+                "y": -89.5,
+                "width": 209,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "53cc0fc1-2a8e-4d2d-8b00-3f48b2ba7861": {
+              "id": "53cc0fc1-2a8e-4d2d-8b00-3f48b2ba7861",
+              "name": "dateDebut",
+              "type": "ClassAttribute",
+              "owner": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "bounds": {
+                "x": 100.5,
+                "y": -59.5,
+                "width": 209,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "date",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "a85075cb-315d-437d-a4a1-0cbe8f9e7b20": {
+              "id": "a85075cb-315d-437d-a4a1-0cbe8f9e7b20",
+              "name": "dateFin",
+              "type": "ClassAttribute",
+              "owner": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "bounds": {
+                "x": 100.5,
+                "y": -29.5,
+                "width": 209,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "date",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "45b6e72e-d7ea-44c2-90f6-6351bdfa376b": {
+              "id": "45b6e72e-d7ea-44c2-90f6-6351bdfa376b",
+              "name": "statut",
+              "type": "ClassAttribute",
+              "owner": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "bounds": {
+                "x": 100.5,
+                "y": 0.5,
+                "width": 209,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "8b442a5b-ca15-4e4d-a37a-74ba8c7e70a3": {
+              "id": "8b442a5b-ca15-4e4d-a37a-74ba8c7e70a3",
+              "name": "montantTotal",
+              "type": "ClassAttribute",
+              "owner": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "bounds": {
+                "x": 100.5,
+                "y": 30.5,
+                "width": 209,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "float",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "ef31bd43-391f-4f54-bc82-55430ae9f40c": {
+              "id": "ef31bd43-391f-4f54-bc82-55430ae9f40c",
+              "name": "+ __init__()",
+              "type": "ClassMethod",
+              "owner": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "bounds": {
+                "x": 100.5,
+                "y": 60.5,
+                "width": 209,
+                "height": 30
+              },
+              "code": "def __init__(self):\n    self.instances = []\n    r1 = ReservationObj(1, \"2026-03-01\", \"2026-03-02\", \"VALIDEE\", 150.0)\n    self.instances.append(r1)\n\nclass ReservationObj:\n    def __init__(self, idReservation, dateDebut, dateFin, statut, montantTotal):\n        self.idReservation = idReservation\n        self.dateDebut = dateDebut\n        self.dateFin = dateFin\n        self.statut = statut\n        self.montantTotal = montantTotal",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "5c27b690-8753-4d89-b7a0-f006dfb18bb6": {
+              "id": "5c27b690-8753-4d89-b7a0-f006dfb18bb6",
+              "name": "+ terminer()",
+              "type": "ClassMethod",
+              "owner": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "bounds": {
+                "x": 100.5,
+                "y": 90.5,
+                "width": 209,
+                "height": 30
+              },
+              "code": "def terminer(self):\n    from datetime import date\n    if date.today() > self.dateFin:\n        return True\n    return False",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "70aa375a-ef6c-4c8e-84b9-a68c7b861a84": {
+              "id": "70aa375a-ef6c-4c8e-84b9-a68c7b861a84",
+              "name": "+ annuler()",
+              "type": "ClassMethod",
+              "owner": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "bounds": {
+                "x": 100.5,
+                "y": 120.5,
+                "width": 209,
+                "height": 30
+              },
+              "code": "def annuler(self):\n        from datetime import date\n        if date.today() < self.dateDebut:\n            print(f\"Réservation {self.id_reservation} annulée.\")\n            return True\n        else:\n            print(\"Impossible d'annuler : l'événement a déjà commencé ou est passé.\")\n            return False",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "8465004c-6230-40fd-bb76-8cb1fd35d8cd": {
+              "id": "8465004c-6230-40fd-bb76-8cb1fd35d8cd",
+              "name": "+ est_modifiable()",
+              "type": "ClassMethod",
+              "owner": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "bounds": {
+                "x": 100.5,
+                "y": 150.5,
+                "width": 209,
+                "height": 30
+              },
+              "code": "def est_modifiable(self):\n    from datetime import date\n    return date.today() < self.dateDebut",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "d9f34f5b-db2a-46a6-a804-d3a34959377d": {
+              "id": "d9f34f5b-db2a-46a6-a804-d3a34959377d",
+              "name": "+ calculer_montant_total()",
+              "type": "ClassMethod",
+              "owner": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "bounds": {
+                "x": 100.5,
+                "y": 180.5,
+                "width": 209,
+                "height": 30
+              },
+              "code": "def calculer_montant_total(self):\n    delta = self.dateFin - self.dateDebut\n    nb_jours = max(delta.days, 1)\n\n    total = 0\n    if self.element and self.element.tarifs:\n        total += self.element.tarifs[0].prixParJour * nb_jours\n\n    for m in self.materiels:\n        total += 50\n\n    self.montantTotal = total\n    return total\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "dc068a50-5ba4-40bd-b77e-009d0c41b0e7": {
+              "id": "dc068a50-5ba4-40bd-b77e-009d0c41b0e7",
+              "name": "+ confirmer()",
+              "type": "ClassMethod",
+              "owner": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+              "bounds": {
+                "x": 100.5,
+                "y": 210.5,
+                "width": 209,
+                "height": 30
+              },
+              "code": "def confirmer(self):\n    self.calculer_montant_total()\n    print(f\"Paiement reçu pour la réservation {self.id_reservation}\")\n    return True",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "51008258-7e46-4323-a1b4-316556740ec7": {
+              "id": "51008258-7e46-4323-a1b4-316556740ec7",
+              "name": "Materiel",
+              "type": "Class",
+              "owner": null,
+              "bounds": {
+                "x": 80,
+                "y": 360,
+                "width": 190,
+                "height": 160
+              },
+              "attributes": [
+                "afb00bb5-1a48-4eba-ade5-a3ecde288ebd",
+                "03bcb13d-c3af-4394-9317-9390d28fb69d",
+                "5286662f-02db-4e89-8177-021d8147a756"
+              ],
+              "methods": [
+                "2482eb88-8fc5-47f8-9677-91cf4a7ca99e"
+              ]
+            },
+            "afb00bb5-1a48-4eba-ade5-a3ecde288ebd": {
+              "id": "afb00bb5-1a48-4eba-ade5-a3ecde288ebd",
+              "name": "idMateriel",
+              "type": "ClassAttribute",
+              "owner": "51008258-7e46-4323-a1b4-316556740ec7",
+              "bounds": {
+                "x": 80.5,
+                "y": 400.5,
+                "width": 189,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "03bcb13d-c3af-4394-9317-9390d28fb69d": {
+              "id": "03bcb13d-c3af-4394-9317-9390d28fb69d",
+              "name": "nom",
+              "type": "ClassAttribute",
+              "owner": "51008258-7e46-4323-a1b4-316556740ec7",
+              "bounds": {
+                "x": 80.5,
+                "y": 430.5,
+                "width": 189,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "5286662f-02db-4e89-8177-021d8147a756": {
+              "id": "5286662f-02db-4e89-8177-021d8147a756",
+              "name": "quantiteDisponible",
+              "type": "ClassAttribute",
+              "owner": "51008258-7e46-4323-a1b4-316556740ec7",
+              "bounds": {
+                "x": 80.5,
+                "y": 460.5,
+                "width": 189,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "2482eb88-8fc5-47f8-9677-91cf4a7ca99e": {
+              "id": "2482eb88-8fc5-47f8-9677-91cf4a7ca99e",
+              "name": "+ __init__()",
+              "type": "ClassMethod",
+              "owner": "51008258-7e46-4323-a1b4-316556740ec7",
+              "bounds": {
+                "x": 80.5,
+                "y": 490.5,
+                "width": 189,
+                "height": 30
+              },
+              "code": "def __init__(self):\n    self.instances = []\n    m1 = MaterielObj(1, \"Projecteur\", 2)\n    self.instances.append(m1)\n\nclass MaterielObj:\n    def __init__(self, idMateriel, nom, quantiteDisponible):\n        self.idMateriel = idMateriel\n        self.nom = nom\n        self.quantiteDisponible = quantiteDisponible\n",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "7c955cf9-6460-4645-86f5-4a819fa6e6d6": {
+              "id": "7c955cf9-6460-4645-86f5-4a819fa6e6d6",
+              "name": "Prestation",
+              "type": "Class",
+              "owner": null,
+              "bounds": {
+                "x": 340,
+                "y": 130,
+                "width": 160,
+                "height": 190
+              },
+              "attributes": [
+                "dbc267f9-fc5f-4bf6-bd6c-d1d55d5c994e",
+                "93ea5bdd-dfa6-4904-a9b8-dc0022cbc412",
+                "14fb81e9-0394-43eb-9668-f69e2f7588bf",
+                "22b11888-850a-49ba-b445-f71d3a9d4c3e"
+              ],
+              "methods": [
+                "43af7d71-db70-49c6-99c7-2835165faaa3"
+              ]
+            },
+            "dbc267f9-fc5f-4bf6-bd6c-d1d55d5c994e": {
+              "id": "dbc267f9-fc5f-4bf6-bd6c-d1d55d5c994e",
+              "name": "idPrestation",
+              "type": "ClassAttribute",
+              "owner": "7c955cf9-6460-4645-86f5-4a819fa6e6d6",
+              "bounds": {
+                "x": 340.5,
+                "y": 170.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "93ea5bdd-dfa6-4904-a9b8-dc0022cbc412": {
+              "id": "93ea5bdd-dfa6-4904-a9b8-dc0022cbc412",
+              "name": "nom",
+              "type": "ClassAttribute",
+              "owner": "7c955cf9-6460-4645-86f5-4a819fa6e6d6",
+              "bounds": {
+                "x": 340.5,
+                "y": 200.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "14fb81e9-0394-43eb-9668-f69e2f7588bf": {
+              "id": "14fb81e9-0394-43eb-9668-f69e2f7588bf",
+              "name": "type",
+              "type": "ClassAttribute",
+              "owner": "7c955cf9-6460-4645-86f5-4a819fa6e6d6",
+              "bounds": {
+                "x": 340.5,
+                "y": 230.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "str",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "22b11888-850a-49ba-b445-f71d3a9d4c3e": {
+              "id": "22b11888-850a-49ba-b445-f71d3a9d4c3e",
+              "name": "capaciteMax",
+              "type": "ClassAttribute",
+              "owner": "7c955cf9-6460-4645-86f5-4a819fa6e6d6",
+              "bounds": {
+                "x": 340.5,
+                "y": 260.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "",
+              "visibility": "private",
+              "attributeType": "int",
+              "implementationType": "none",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            },
+            "43af7d71-db70-49c6-99c7-2835165faaa3": {
+              "id": "43af7d71-db70-49c6-99c7-2835165faaa3",
+              "name": "+ __init__()",
+              "type": "ClassMethod",
+              "owner": "7c955cf9-6460-4645-86f5-4a819fa6e6d6",
+              "bounds": {
+                "x": 340.5,
+                "y": 290.5,
+                "width": 159,
+                "height": 30
+              },
+              "code": "def __init__(self):\n    self.instances = []\n    p1 = PrestationObj(1, \"Conférence\", \"Culturel\", 50)\n    self.instances.append(p1)\n\nclass PrestationObj:\n    def __init__(self, idPrestation, nom, type, capaciteMax):\n        self.idPrestation = idPrestation\n        self.nom = nom\n        self.type = type\n        self.capaciteMax = capaciteMax",
+              "visibility": "public",
+              "attributeType": "str",
+              "implementationType": "code",
+              "stateMachineId": "",
+              "quantumCircuitId": "",
+              "isOptional": false
+            }
+          },
+          "relationships": {
+            "489db4a8-838a-4bea-86b7-c06ac87a8a4f": {
+              "id": "489db4a8-838a-4bea-86b7-c06ac87a8a4f",
+              "name": "",
+              "type": "ClassComposition",
+              "owner": null,
+              "bounds": {
+                "x": -175,
+                "y": -210,
+                "width": 36.6875,
+                "height": 90
+              },
+              "path": [
+                {
+                  "x": 5,
+                  "y": 0
+                },
+                {
+                  "x": 5,
+                  "y": 90
+                }
+              ],
+              "source": {
+                "direction": "Down",
+                "element": "2f278091-b8c0-4b93-8bba-483242e4f510",
+                "multiplicity": "0..1",
+                "role": ""
+              },
+              "target": {
+                "direction": "Up",
+                "element": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+                "multiplicity": "1..*",
+                "role": ""
+              },
+              "isManuallyLayouted": false
+            },
+            "2816c850-d601-4cb9-974a-ddd607d7e0fa": {
+              "id": "2816c850-d601-4cb9-974a-ddd607d7e0fa",
+              "name": "",
+              "type": "ClassComposition",
+              "owner": null,
+              "bounds": {
+                "x": -385,
+                "y": 57.5,
+                "width": 105,
+                "height": 192.5
+              },
+              "path": [
+                {
+                  "x": 105,
+                  "y": 10
+                },
+                {
+                  "x": 5,
+                  "y": 10
+                },
+                {
+                  "x": 5,
+                  "y": 192.5
+                }
+              ],
+              "source": {
+                "direction": "Downleft",
+                "element": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+                "multiplicity": "1",
+                "role": ""
+              },
+              "target": {
+                "direction": "Topleft",
+                "element": "5bd4468c-7987-490e-855b-571f09d1d82c",
+                "multiplicity": "0..*",
+                "role": ""
+              },
+              "isManuallyLayouted": false
+            },
+            "7e48bc59-1ea3-4642-bdb2-9497cf9d6b37": {
+              "id": "7e48bc59-1ea3-4642-bdb2-9497cf9d6b37",
+              "name": "",
+              "type": "ClassComposition",
+              "owner": null,
+              "bounds": {
+                "x": -130,
+                "y": 130,
+                "width": 34.015625,
+                "height": 130
+              },
+              "path": [
+                {
+                  "x": 5,
+                  "y": 0
+                },
+                {
+                  "x": 5,
+                  "y": 130
+                }
+              ],
+              "source": {
+                "direction": "Bottomright",
+                "element": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+                "multiplicity": "1",
+                "role": ""
+              },
+              "target": {
+                "direction": "Topleft",
+                "element": "43cb4524-6f8b-47c0-8a45-8d33d1b43fb0",
+                "multiplicity": "0..*",
+                "role": ""
+              },
+              "isManuallyLayouted": false
+            },
+            "d004c6eb-0a76-4ce8-82fb-38229dfc422c": {
+              "id": "d004c6eb-0a76-4ce8-82fb-38229dfc422c",
+              "name": "",
+              "type": "ClassBidirectional",
+              "owner": null,
+              "bounds": {
+                "x": 145,
+                "y": -260,
+                "width": 36.6875,
+                "height": 140
+              },
+              "path": [
+                {
+                  "x": 5,
+                  "y": 0
+                },
+                {
+                  "x": 5,
+                  "y": 130
+                }
+              ],
+              "source": {
+                "direction": "Down",
+                "element": "49db1b4b-6d6c-49e1-8cd8-b8825b735602",
+                "multiplicity": "0..1",
+                "role": ""
+              },
+              "target": {
+                "direction": "Up",
+                "element": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+                "multiplicity": "0..1",
+                "role": ""
+              },
+              "isManuallyLayouted": false
+            },
+            "72968cab-f827-41a8-a995-a849eab6f27c": {
+              "id": "72968cab-f827-41a8-a995-a849eab6f27c",
+              "name": "",
+              "type": "ClassUnidirectional",
+              "owner": null,
+              "bounds": {
+                "x": 180,
+                "y": 240,
+                "width": 34.015625,
+                "height": 120
+              },
+              "path": [
+                {
+                  "x": 5,
+                  "y": 0
+                },
+                {
+                  "x": 5,
+                  "y": 120
+                }
+              ],
+              "source": {
+                "direction": "Down",
+                "element": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+                "multiplicity": "0..*",
+                "role": ""
+              },
+              "target": {
+                "direction": "Up",
+                "element": "51008258-7e46-4323-a1b4-316556740ec7",
+                "multiplicity": "0..*",
+                "role": ""
+              },
+              "isManuallyLayouted": false
+            },
+            "be104c34-1f8a-4ad9-a94a-3f937e81aa28": {
+              "id": "be104c34-1f8a-4ad9-a94a-3f937e81aa28",
+              "name": "",
+              "type": "ClassUnidirectional",
+              "owner": null,
+              "bounds": {
+                "x": 310,
+                "y": 45,
+                "width": 139.015625,
+                "height": 85
+              },
+              "path": [
+                {
+                  "x": 0,
+                  "y": 10
+                },
+                {
+                  "x": 40,
+                  "y": 10
+                },
+                {
+                  "x": 110,
+                  "y": 45
+                },
+                {
+                  "x": 110,
+                  "y": 85
+                }
+              ],
+              "source": {
+                "direction": "Right",
+                "element": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+                "multiplicity": "0..*",
+                "role": ""
+              },
+              "target": {
+                "direction": "Up",
+                "element": "7c955cf9-6460-4645-86f5-4a819fa6e6d6",
+                "multiplicity": "0..*",
+                "role": ""
+              },
+              "isManuallyLayouted": false
+            },
+            "d236168f-3400-44cd-b05d-4dc61ee63aef": {
+              "id": "d236168f-3400-44cd-b05d-4dc61ee63aef",
+              "name": "",
+              "type": "ClassUnidirectional",
+              "owner": null,
+              "bounds": {
+                "x": -90,
+                "y": -300,
+                "width": 190,
+                "height": 301.5
+              },
+              "path": [
+                {
+                  "x": 0,
+                  "y": 10
+                },
+                {
+                  "x": 95,
+                  "y": 10
+                },
+                {
+                  "x": 95,
+                  "y": 262.5
+                },
+                {
+                  "x": 190,
+                  "y": 262.5
+                }
+              ],
+              "source": {
+                "direction": "Right",
+                "element": "2f278091-b8c0-4b93-8bba-483242e4f510",
+                "multiplicity": "1",
+                "role": ""
+              },
+              "target": {
+                "direction": "Upleft",
+                "element": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+                "multiplicity": "0..*",
+                "role": ""
+              },
+              "isManuallyLayouted": false
+            },
+            "00d9c2b8-2d57-427b-9c42-cdbadd49abf4": {
+              "id": "00d9c2b8-2d57-427b-9c42-cdbadd49abf4",
+              "name": "",
+              "type": "ClassUnidirectional",
+              "owner": null,
+              "bounds": {
+                "x": -60,
+                "y": -5,
+                "width": 160,
+                "height": 49
+              },
+              "path": [
+                {
+                  "x": 160,
+                  "y": 10
+                },
+                {
+                  "x": 0,
+                  "y": 10
+                }
+              ],
+              "source": {
+                "direction": "Left",
+                "element": "6cc68481-1a61-41e5-9c40-89512ec34db3",
+                "multiplicity": "0..1",
+                "role": ""
+              },
+              "target": {
+                "direction": "Downright",
+                "element": "35538f03-4fe5-4043-aa7e-d173fa3413ef",
+                "multiplicity": "1..*",
+                "role": ""
+              },
+              "isManuallyLayouted": false
+            }
+          },
+          "assessments": {}
+        },
+        "lastUpdate": "2026-03-10T08:53:31.882Z"
+      },
+      "ObjectDiagram": {
+        "id": "9431986f-1a29-4f23-81ea-b08c2515db6c",
+        "title": "Object Diagram",
+        "model": {
+          "version": "3.0.0",
+          "type": "ObjectDiagram",
+          "size": {
+            "width": 1400,
+            "height": 740
+          },
+          "elements": {},
+          "relationships": {},
+          "interactive": {
+            "elements": {},
+            "relationships": {}
+          },
+          "assessments": {}
+        },
+        "lastUpdate": "2026-03-02T09:41:40.825Z"
+      },
+      "StateMachineDiagram": {
+        "id": "65fd585f-8d7b-4759-82db-f3e3dcc4402d",
+        "title": "State Machine Diagram",
+        "model": {
+          "version": "3.0.0",
+          "type": "StateMachineDiagram",
+          "size": {
+            "width": 1940,
+            "height": 1221
+          },
+          "interactive": {
+            "elements": {},
+            "relationships": {}
+          },
+          "elements": {
+            "289f3dbc-3fe6-4af5-8786-a38c41bad2ad": {
+              "id": "289f3dbc-3fe6-4af5-8786-a38c41bad2ad",
+              "name": "",
+              "type": "StateInitialNode",
+              "owner": null,
+              "bounds": {
+                "x": 40,
+                "y": -380,
+                "width": 45,
+                "height": 45
+              }
+            },
+            "d1d5598d-6630-4020-9cc7-186e557b68d1": {
+              "id": "d1d5598d-6630-4020-9cc7-186e557b68d1",
+              "name": "EnCreation",
+              "type": "State",
+              "owner": null,
+              "bounds": {
+                "x": -120,
+                "y": -230,
+                "width": 370,
+                "height": 70
+              },
+              "bodies": [
+                "77344585-3c01-4d6f-90ee-b659e9fcac71"
+              ],
+              "fallbackBodies": []
+            },
+            "77344585-3c01-4d6f-90ee-b659e9fcac71": {
+              "id": "77344585-3c01-4d6f-90ee-b659e9fcac71",
+              "name": "Saisie des informations du client et des éléments",
+              "type": "StateBody",
+              "owner": "d1d5598d-6630-4020-9cc7-186e557b68d1",
+              "bounds": {
+                "x": -119.5,
+                "y": -189.5,
+                "width": 369,
+                "height": 30
+              }
+            },
+            "c04b770a-7855-45e1-9cfb-af680962bfde": {
+              "id": "c04b770a-7855-45e1-9cfb-af680962bfde",
+              "name": "EnAttenteDePaiement",
+              "type": "State",
+              "owner": null,
+              "bounds": {
+                "x": -80,
+                "y": 0,
+                "width": 280,
+                "height": 70
+              },
+              "bodies": [
+                "786c9169-ac2e-4dc7-9b51-6a8b17537d56"
+              ],
+              "fallbackBodies": []
+            },
+            "786c9169-ac2e-4dc7-9b51-6a8b17537d56": {
+              "id": "786c9169-ac2e-4dc7-9b51-6a8b17537d56",
+              "name": "Attente du paiement pour réservation",
+              "type": "StateBody",
+              "owner": "c04b770a-7855-45e1-9cfb-af680962bfde",
+              "bounds": {
+                "x": -79.5,
+                "y": 40.5,
+                "width": 279,
+                "height": 30
+              }
+            },
+            "17e3593d-bedc-46d6-92c2-b7c130ef08c6": {
+              "id": "17e3593d-bedc-46d6-92c2-b7c130ef08c6",
+              "name": "Confirmee",
+              "type": "State",
+              "owner": null,
+              "bounds": {
+                "x": -450,
+                "y": 120,
+                "width": 380,
+                "height": 70
+              },
+              "bodies": [
+                "8154a950-7ce5-42c2-a40e-b5fd02084695"
+              ],
+              "fallbackBodies": []
+            },
+            "8154a950-7ce5-42c2-a40e-b5fd02084695": {
+              "id": "8154a950-7ce5-42c2-a40e-b5fd02084695",
+              "name": "Réservation confirmée et réservée dans le système",
+              "type": "StateBody",
+              "owner": "17e3593d-bedc-46d6-92c2-b7c130ef08c6",
+              "bounds": {
+                "x": -449.5,
+                "y": 160.5,
+                "width": 379,
+                "height": 30
+              }
+            },
+            "86c955e4-9990-4b33-b397-125b2f1d132b": {
+              "id": "86c955e4-9990-4b33-b397-125b2f1d132b",
+              "name": "Annulee",
+              "type": "State",
+              "owner": null,
+              "bounds": {
+                "x": 140,
+                "y": 330,
+                "width": 460,
+                "height": 70
+              },
+              "bodies": [
+                "d742a6e7-41c9-4c98-ae40-8d71b1ce2a4e"
+              ],
+              "fallbackBodies": []
+            },
+            "d742a6e7-41c9-4c98-ae40-8d71b1ce2a4e": {
+              "id": "d742a6e7-41c9-4c98-ae40-8d71b1ce2a4e",
+              "name": "Réservation annulée par le gestionnaire ou pour non-paiement",
+              "type": "StateBody",
+              "owner": "86c955e4-9990-4b33-b397-125b2f1d132b",
+              "bounds": {
+                "x": 140.5,
+                "y": 370.5,
+                "width": 459,
+                "height": 30
+              }
+            },
+            "015d69ce-1fdc-4ea1-bd8e-2bf5b6025120": {
+              "id": "015d69ce-1fdc-4ea1-bd8e-2bf5b6025120",
+              "name": "Terminee",
+              "type": "State",
+              "owner": null,
+              "bounds": {
+                "x": -460,
+                "y": 520,
+                "width": 450,
+                "height": 70
+              },
+              "bodies": [
+                "07336ce5-8a89-4300-ad4b-08311e44fc33"
+              ],
+              "fallbackBodies": []
+            },
+            "07336ce5-8a89-4300-ad4b-08311e44fc33": {
+              "id": "07336ce5-8a89-4300-ad4b-08311e44fc33",
+              "name": "L'évènement est passé la réservation est archivée pour stats",
+              "type": "StateBody",
+              "owner": "015d69ce-1fdc-4ea1-bd8e-2bf5b6025120",
+              "bounds": {
+                "x": -459.5,
+                "y": 560.5,
+                "width": 449,
+                "height": 30
+              }
+            },
+            "ea80915f-8706-49dd-96ab-a508e766e14d": {
+              "id": "ea80915f-8706-49dd-96ab-a508e766e14d",
+              "name": "Modifiee",
+              "type": "State",
+              "owner": null,
+              "bounds": {
+                "x": -950,
+                "y": 330,
+                "width": 340,
+                "height": 70
+              },
+              "bodies": [
+                "097751a1-af37-45f4-8b2f-121268782b18"
+              ],
+              "fallbackBodies": []
+            },
+            "097751a1-af37-45f4-8b2f-121268782b18": {
+              "id": "097751a1-af37-45f4-8b2f-121268782b18",
+              "name": "Modification des dates, matériel ou prestation",
+              "type": "StateBody",
+              "owner": "ea80915f-8706-49dd-96ab-a508e766e14d",
+              "bounds": {
+                "x": -949.5,
+                "y": 370.5,
+                "width": 339,
+                "height": 30
+              }
+            }
+          },
+          "relationships": {
+            "bc403600-5677-4cf1-8bc4-e24f68459f52": {
+              "id": "bc403600-5677-4cf1-8bc4-e24f68459f52",
+              "name": "valider_creneau",
+              "type": "StateTransition",
+              "owner": null,
+              "bounds": {
+                "x": 62.5,
+                "y": -335,
+                "width": 118.8515625,
+                "height": 105
+              },
+              "path": [
+                {
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "x": 0,
+                  "y": 105
+                }
+              ],
+              "source": {
+                "direction": "Bottomright",
+                "element": "289f3dbc-3fe6-4af5-8786-a38c41bad2ad"
+              },
+              "target": {
+                "direction": "Up",
+                "element": "d1d5598d-6630-4020-9cc7-186e557b68d1"
+              },
+              "isManuallyLayouted": false
+            },
+            "e434f5cb-7b06-4173-8be7-f8e3a26ca2e3": {
+              "id": "e434f5cb-7b06-4173-8be7-f8e3a26ca2e3",
+              "name": "annuler",
+              "type": "StateTransition",
+              "owner": null,
+              "bounds": {
+                "x": 170,
+                "y": 70,
+                "width": 59.046875,
+                "height": 260
+              },
+              "path": [
+                {
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "x": 0,
+                  "y": 260
+                }
+              ],
+              "source": {
+                "direction": "Bottomright",
+                "element": "c04b770a-7855-45e1-9cfb-af680962bfde"
+              },
+              "target": {
+                "direction": "Topright",
+                "element": "86c955e4-9990-4b33-b397-125b2f1d132b"
+              },
+              "isManuallyLayouted": false
+            },
+            "d147f309-53b6-4f48-a45d-110bb1f4655f": {
+              "id": "d147f309-53b6-4f48-a45d-110bb1f4655f",
+              "name": "confirmer",
+              "type": "StateTransition",
+              "owner": null,
+              "bounds": {
+                "x": -165,
+                "y": -13.75,
+                "width": 85,
+                "height": 133.75
+              },
+              "path": [
+                {
+                  "x": 85,
+                  "y": 31.25
+                },
+                {
+                  "x": 0,
+                  "y": 31.25
+                },
+                {
+                  "x": 0,
+                  "y": 133.75
+                }
+              ],
+              "source": {
+                "direction": "Upleft",
+                "element": "c04b770a-7855-45e1-9cfb-af680962bfde"
+              },
+              "target": {
+                "direction": "Topright",
+                "element": "17e3593d-bedc-46d6-92c2-b7c130ef08c6"
+              },
+              "isManuallyLayouted": false
+            },
+            "c4c4f8db-c05d-446a-bb12-f3bc1a3ec3e0": {
+              "id": "c4c4f8db-c05d-446a-bb12-f3bc1a3ec3e0",
+              "name": "terminer",
+              "type": "StateTransition",
+              "owner": null,
+              "bounds": {
+                "x": -260,
+                "y": 190,
+                "width": 64.3515625,
+                "height": 330
+              },
+              "path": [
+                {
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "x": 0,
+                  "y": 330
+                }
+              ],
+              "source": {
+                "direction": "Down",
+                "element": "17e3593d-bedc-46d6-92c2-b7c130ef08c6"
+              },
+              "target": {
+                "direction": "Up",
+                "element": "015d69ce-1fdc-4ea1-bd8e-2bf5b6025120"
+              },
+              "isManuallyLayouted": false
+            },
+            "e90d1464-7b4b-4fd6-a0db-0acd939fe477": {
+              "id": "e90d1464-7b4b-4fd6-a0db-0acd939fe477",
+              "name": "annuler",
+              "type": "StateTransition",
+              "owner": null,
+              "bounds": {
+                "x": -70,
+                "y": 172.5,
+                "width": 210,
+                "height": 192.5
+              },
+              "path": [
+                {
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "x": 105,
+                  "y": 0
+                },
+                {
+                  "x": 105,
+                  "y": 192.5
+                },
+                {
+                  "x": 210,
+                  "y": 192.5
+                }
+              ],
+              "source": {
+                "direction": "Downright",
+                "element": "17e3593d-bedc-46d6-92c2-b7c130ef08c6"
+              },
+              "target": {
+                "direction": "Left",
+                "element": "86c955e4-9990-4b33-b397-125b2f1d132b"
+              },
+              "isManuallyLayouted": true
+            },
+            "85c398e4-9bf4-4ba4-a5d3-f34ef74bbaf4": {
+              "id": "85c398e4-9bf4-4ba4-a5d3-f34ef74bbaf4",
+              "name": "est_modifiable",
+              "type": "StateTransition",
+              "owner": null,
+              "bounds": {
+                "x": -695,
+                "y": 190,
+                "width": 340,
+                "height": 140
+              },
+              "path": [
+                {
+                  "x": 340,
+                  "y": 0
+                },
+                {
+                  "x": 340,
+                  "y": 70
+                },
+                {
+                  "x": 0,
+                  "y": 70
+                },
+                {
+                  "x": 0,
+                  "y": 140
+                }
+              ],
+              "source": {
+                "direction": "Bottomleft",
+                "element": "17e3593d-bedc-46d6-92c2-b7c130ef08c6"
+              },
+              "target": {
+                "direction": "Topright",
+                "element": "ea80915f-8706-49dd-96ab-a508e766e14d"
+              },
+              "isManuallyLayouted": false
+            },
+            "b341622b-aa59-435c-8a89-ce2a50bf3246": {
+              "id": "b341622b-aa59-435c-8a89-ce2a50bf3246",
+              "name": "confirmer",
+              "type": "StateTransition",
+              "owner": null,
+              "bounds": {
+                "x": -865,
+                "y": 137.5,
+                "width": 415,
+                "height": 192.5
+              },
+              "path": [
+                {
+                  "x": 0,
+                  "y": 192.5
+                },
+                {
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "x": 415,
+                  "y": 0
+                }
+              ],
+              "source": {
+                "direction": "Topleft",
+                "element": "ea80915f-8706-49dd-96ab-a508e766e14d"
+              },
+              "target": {
+                "direction": "Upleft",
+                "element": "17e3593d-bedc-46d6-92c2-b7c130ef08c6"
+              },
+              "isManuallyLayouted": false
+            },
+            "42ca60f2-1bdc-43a7-8737-31384b3a5c1d": {
+              "id": "42ca60f2-1bdc-43a7-8737-31384b3a5c1d",
+              "name": "",
+              "type": "StateTransition",
+              "owner": null,
+              "bounds": {
+                "x": 60,
+                "y": -160,
+                "width": 1,
+                "height": 160
+              },
+              "path": [
+                {
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "x": 0,
+                  "y": 160
+                }
+              ],
+              "source": {
+                "direction": "Down",
+                "element": "d1d5598d-6630-4020-9cc7-186e557b68d1"
+              },
+              "target": {
+                "direction": "Up",
+                "element": "c04b770a-7855-45e1-9cfb-af680962bfde"
+              },
+              "isManuallyLayouted": false
+            },
+            "980436d3-7280-40fa-b515-3a0528b6914c": {
+              "id": "980436d3-7280-40fa-b515-3a0528b6914c",
+              "name": "",
+              "type": "StateTransition",
+              "owner": null,
+              "bounds": {
+                "x": 60,
+                "y": -160,
+                "width": 1,
+                "height": 160
+              },
+              "path": [
+                {
+                  "x": 0,
+                  "y": 160
+                },
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "source": {
+                "direction": "Topright",
+                "element": "c04b770a-7855-45e1-9cfb-af680962bfde"
+              },
+              "target": {
+                "direction": "Bottomright",
+                "element": "d1d5598d-6630-4020-9cc7-186e557b68d1"
+              },
+              "isManuallyLayouted": false
+            },
+            "4b997f93-e55e-4804-a58c-e6cc0da45277": {
+              "id": "4b997f93-e55e-4804-a58c-e6cc0da45277",
+              "name": "terminer",
+              "type": "StateTransition",
+              "owner": null,
+              "bounds": {
+                "x": -780,
+                "y": 400,
+                "width": 320,
+                "height": 190.5
+              },
+              "path": [
+                {
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "x": 0,
+                  "y": 172.5
+                },
+                {
+                  "x": 320,
+                  "y": 172.5
+                }
+              ],
+              "source": {
+                "direction": "Down",
+                "element": "ea80915f-8706-49dd-96ab-a508e766e14d"
+              },
+              "target": {
+                "direction": "Downleft",
+                "element": "015d69ce-1fdc-4ea1-bd8e-2bf5b6025120"
+              },
+              "isManuallyLayouted": false
+            },
+            "f2a8d600-217a-4726-a367-4b81f1923d35": {
+              "id": "f2a8d600-217a-4726-a367-4b81f1923d35",
+              "name": "terminer",
+              "type": "StateTransition",
+              "owner": null,
+              "bounds": {
+                "x": -10,
+                "y": 400,
+                "width": 265,
+                "height": 190.5
+              },
+              "path": [
+                {
+                  "x": 265,
+                  "y": 0
+                },
+                {
+                  "x": 265,
+                  "y": 172.5
+                },
+                {
+                  "x": 0,
+                  "y": 172.5
+                }
+              ],
+              "source": {
+                "direction": "Bottomleft",
+                "element": "86c955e4-9990-4b33-b397-125b2f1d132b"
+              },
+              "target": {
+                "direction": "Downright",
+                "element": "015d69ce-1fdc-4ea1-bd8e-2bf5b6025120"
+              },
+              "isManuallyLayouted": false
+            }
+          },
+          "assessments": {}
+        },
+        "lastUpdate": "2026-03-10T08:53:19.620Z"
+      },
+      "AgentDiagram": {
+        "id": "7c80ea76-c5d8-4c7c-82f0-4015f89e4e11",
+        "title": "Agent Diagram",
+        "model": {
+          "version": "3.0.0",
+          "type": "AgentDiagram",
+          "size": {
+            "width": 1400,
+            "height": 740
+          },
+          "elements": {},
+          "relationships": {},
+          "interactive": {
+            "elements": {},
+            "relationships": {}
+          },
+          "assessments": {}
+        },
+        "lastUpdate": "2026-03-02T09:41:40.825Z"
+      },
+      "UserDiagram": {
+        "id": "b2933bef-9c95-409d-9fd0-0d275a7aa185",
+        "title": "User Diagram",
+        "model": {
+          "version": "3.0.0",
+          "type": "UserDiagram",
+          "size": {
+            "width": 1400,
+            "height": 740
+          },
+          "elements": {},
+          "relationships": {},
+          "interactive": {
+            "elements": {},
+            "relationships": {}
+          },
+          "assessments": {}
+        },
+        "lastUpdate": "2026-03-02T09:41:40.825Z"
+      },
+      "QuantumCircuitDiagram": {
+        "id": "cbbe30be-9ac4-4c14-9500-00404adf2425",
+        "title": "Quantum Circuit",
+        "model": {
+          "cols": [],
+          "gates": [],
+          "gateMetadata": {},
+          "classicalBitCount": 0,
+          "version": "1.0.0"
+        },
+        "lastUpdate": "2026-03-02T09:42:20.950Z"
+      }
+    },
+    "settings": {
+      "defaultDiagramType": "ClassDiagram",
+      "autoSave": true,
+      "collaborationEnabled": false
+    }
+  },
+  "exportedAt": "2026-03-10T08:53:59.738Z",
+  "version": "2.0.0"
+}
